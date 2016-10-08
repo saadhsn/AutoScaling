@@ -18,4 +18,6 @@
 - only run jar file with dependencies in this case *sparkStreaming-1.0-SNAPSHOT-jar-with-dependencies.jar*  
 - for submitting spark application:  
 - `bin/spark-submit --class saad.sparkstreaming.SparkDirectStreaming --master local[n] /pathToJar/sparkStreaming-1.0-SNAPSHOT-jar-with-dependencies.jar localhost:9092 jobEvents`  
+- where **localhost:9092** and **jobEvents** are kafka broker list and kafka topic name respectively  
+
 
