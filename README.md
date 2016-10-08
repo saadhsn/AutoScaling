@@ -4,7 +4,8 @@
 - `cd kafkaproducer`  
 - compiling code `mvn clean install`  
 - `cd target` this directory contains two jar files  
-- only run jar file with dependencies in this case *kafka-1.0-SNAPSHOT-jar-with-dependencies.jar*  
+- only run jar file with dependencies in this case *kafka-1.0-SNAPSHOT-jar-with-dependencies.jar* 
+- **Important** you need to add your own data path in Kafka producer code, class name is *SimpleProducer.java* and data can be downloaded from here [jobEvents_data(CSV Fromat)](https://commondatastorage.googleapis.com/clusterdata-2011-2/job_events/part-00001-of-00500.csv.gz)   
 - running jar file `java -cp pathToJar/kafka-1.0-SNAPSHOT-jar-with-dependencies.jar: saad.kafkaproducer.SimpleProducer`  
 - running jar file `java -cp pathToJar/kafka-1.0-SNAPSHOT-jar-with-dependencies.jar: saad.kafkaproducer.FastProducer`  
 - *SimpleProducer* class reads whole data from csv file locally stored  
