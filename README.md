@@ -16,8 +16,9 @@
 - `cd sparkStreaming`  
 - compiling code `mvn clean install`  
 - `cd target` this directory contains two jar files  
-- only run jar file with dependencies in this case *sparkStreaming-1.0-SNAPSHOT-jar-with-dependencies.jar*  
-- for submitting spark application:  
+- only run jar file with dependencies in this case *sparkStreaming-1.0-SNAPSHOT-jar-with-dependencies.jar* 
+- this jar has been tested with *Apache Spark 1.6* only and runs with *Apache Kafka* broker version *0.10*
+- for submitting spark application locally (on your machine):  
 - `bin/spark-submit --class saad.sparkstreaming.SparkDirectStreaming --master local[n] /pathToJar/sparkStreaming-1.0-SNAPSHOT-jar-with-dependencies.jar localhost:9092 jobEvents`  
 - where **localhost:9092** and **jobEvents** are kafka broker list and kafka topic name respectively  
 
